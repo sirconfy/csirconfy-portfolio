@@ -1,0 +1,273 @@
+/* RESET DEFAULT STYLES */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("download.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   position: relative;
+   height: 100vh;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* section{
+  padding: 100px 200px;
+
+} */
+
+.hamburger-wrapper{
+  display: none;
+}
+
+.nav-items  .nav-links{
+  font-size: 17px;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-items .nav-links:hover{
+  background-color: #ffffff;
+  color:rgb(47, 46, 45);
+  border-radius: 2px;
+}
+
+
+.logo-wrapper .logo{
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+}
+
+/* MAIN SECTION */
+main{
+  display: flex;
+  padding: 100px 200px ;
+}
+.info{
+  width: 40%;
+  line-height: 1.5;
+}
+.info h1{
+  font-size: 50px;
+  font-weight: 700;
+  /* color: rgb(47, 46, 65); */
+  color: white;
+}
+.info p{
+font-size: 20px;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.info p strong{
+  /* color: rgb(47, 46, 65); */
+  color: white;
+}
+/* IMAGE SECTION */
+/* .my-image{
+  width: 60%;
+} */
+/* .my-image img{
+  width: 100%;
+  height: 100%;
+}*/
+
+ /* SOCIAL MEDIA ICONS */
+.social-buttons {
+  position: absolute;
+  right: 14rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 4px 0;
+}
+
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #a3a1a1, #0f0f0f);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+
+.social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+  background: linear-gradient(45deg, #a3a1a1, #0f0f0f);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: blue;
+  transform: scale(2.2);
+} 
+
+
+.cont{
+  border:  2px solid #ffffff;
+  padding: 10px;
+  margin-right: 200px ;
+  margin-top: 10px;
+}
+.cont a{
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+/* MEDIA QUERY */
+
+
+
+@media (max-width: 980px){
+
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  
+  main{
+    padding: 100px 20px;
+    transition: 0.3s ease;
+  }
+  .social-buttons {
+
+      right: 2rem;
+      
+  }
+  .cont{
+    border:  2px solid #ffffff;
+    padding: 10px;
+    margin-right: 100px ;
+    margin-top: 10px;
+  }
+  
+
+}
+
+
+
+@media (max-width: 900px){
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+  .hamburger-wrapper{
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+  
+  }
+  .nav-items{
+    display: none;
+  }
+  .open-nav-items{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .nav-links{
+    text-align: right;
+  }
+
+  /* MAIN SECTION */
+main{
+  display: flex;
+  padding: 100px 50px ;
+}
+.info{
+  width: 40%;
+  line-height: 1.5;
+}
+.cont{
+  border:  2px solid #ffffff;
+  padding: 10px;
+  margin-right: 200px ;
+  margin-top: 10px;
+}
+.cont a{
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+  
+}
+
+@media (max-width: 690px){
+ main{
+   flex-direction: column;
+ }
+ .info{
+   width: 100%;
+ }
+ .my-image{
+   width: 100%;
+   margin-top: 50px;
+ }
+ 
+ .social-buttons {
+
+  flex-direction: row;
+    left: 1rem;
+    margin-left: 32px;
+    
+}
+
+
+
+.social-buttons a {
+      margin-left: 10px;
+}
+
+.logo-wrapper .logo{
+  font-size: 25px;
+ 
+}
+
+}

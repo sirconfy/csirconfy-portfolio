@@ -1,0 +1,180 @@
+/* RESET DEFAULT STYLES */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background-color: rgb(47, 46, 45);
+  transition: 0.3s ease;
+}
+
+/* section{
+  padding: 100px 200px;
+} */
+
+.hamburger-wrapper{
+  display: none;
+}
+
+.nav-items  .nav-links{
+  font-size: 17px;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-items .nav-links:hover{
+  background-color: #ffffff;
+  color:rgb(47, 46, 45);
+  border-radius: 2px;
+}
+
+.logo-wrapper .logo{
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Dancing Script';
+  font-weight: 700;
+
+}
+
+/* MAIN SECTION */
+main{
+  display: flex;
+  padding: 100px 200px ;
+}
+.info{
+  width: 40%;
+  line-height: 1.5;
+}
+.info h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(47, 46, 65);
+  text-decoration: underline;
+}
+.info p{
+font-size: 15px;
+justify-content: center;
+
+}
+
+.info p strong{
+  color: rgb(47, 46, 65);
+}
+/* IMAGE SECTION */
+.my-image{
+  width: 60%;
+}
+.my-image img{
+  width: 40%;
+  height: 80%;
+  border-radius: 120%;
+
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(47, 46, 65);;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+.footer a{
+  color: white;
+  font-size: 20px;
+}
+
+.footer  i{
+  font-size: 30px;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 980px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+
+  main{
+    padding: 100px 20px;
+    transition: 0.3s ease;
+  }
+
+
+}
+
+@media (max-width: 900px){
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+  .hamburger-wrapper{
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+
+  }
+  .nav-items{
+    display: none;
+  }
+  .open-nav-items{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .nav-links{
+    text-align: right;
+  }
+
+  /* MAIN SECTION */
+main{
+  display: flex;
+  padding: 100px 50px ;
+}
+.info{
+  width: 40%;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+}
+
+@media (max-width: 690px){
+ main{
+   flex-direction: column;
+ }
+ .info{
+   width: 100%;
+ }
+ .my-image{
+   width: 100%;
+   margin-top: 20px;
+ }
+} 
