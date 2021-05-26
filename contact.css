@@ -20,13 +20,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
-/*set styles for the cancel button*/
-     
-/* .cancelbtn {
-  padding: 15px 20px;
-  background-color: #FF2E00; */
-/* } */
-/*float cancel and signup buttons and add an equal width*/
+
 
 .signupbtn {
   float: center;

@@ -8,7 +8,7 @@
 
 .skills {
   width: 100%;
-  padding: 10px 50px;
+  padding: 100px 200px;
   transition: 0.3s ease;
 }
 .html, .css, .js{
@@ -21,6 +21,7 @@
   width: 20%;
   margin-bottom: 20px;
   color: rgb(47, 46, 65);
+  margin-right: 40px;
 }
 
 .skill-description{
@@ -106,3 +107,49 @@ animation-iteration-count: infinite;
     padding: 100px 50px;
   }
 }
+
+
+@media(max-width: 500px){
+  .skills{
+    padding:100px 20px;
+
+  }
+}
+@media(max-width: 400px){
+  .skills{
+    padding:40px -200px;
+
+  }
+  #item4 img{
+    width: 150%;
+    margin-left: -5%;
+    
+    }
+}
+
+@media(max-width: 370px){
+  .skills{
+    padding: 40px -50px;
+    
+
+  }
+  
+#item4 img{
+  width: 150%;
+  margin-left: -5%;
+  
+  }
+}
+
+@media(max-width: 340px){
+ 
+  
+#item4 img{
+  width: 200%;
+  margin-left: -5%;
+  
+  }
+}
+
+
+
